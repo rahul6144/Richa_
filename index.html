@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richa, My Heart Awaits</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen relative">
+    <div id="lock-screen">
+        <div class="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-2xl text-center" data-aos="zoom-in">
+            <h2 class="text-3xl font-bold mb-4 text-pink-200 glow">Enter the Key to My Heart</h2>
+            <input id="pin-input" type="text" placeholder="Enter Pin" class="pin-input p-3 rounded-lg text-lg mb-4 w-64 text-center">
+            <p id="error-message" class="text-red-400 hidden mb-4">Incorrect Pin! Try again.</p>
+            <button id="unlock-btn" class="bg-gradient-to-r from-pink-600 to-red-500 hover:from-pink-700 hover:to-red-600 text-white font-semibold py-2 px-6 rounded-full shadow-lg transform hover:scale-105 transition-transform">
+                Unlock
+            </button>
+        </div>
+    </div>
+    <div id="main-content">
+        <div id="hearts" class="fixed inset-0 pointer-events-none"></div>
+        <div id="confetti" class="fixed inset-0 pointer-events-none"></div>
+        <div id="sparkles" class="fixed inset-0 pointer-events-none"></div>
+        <div class="max-w-md mx-auto bg-white bg-opacity-20 backdrop-blur-md p-10 rounded-2xl shadow-2xl mt-8" data-aos="zoom-in" data-aos-duration="1200">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 text-pink-900 glow">My Dearest Richa</h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-200 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                Richa, you are my everything—my joy, my inspiration, my forever. Your smile paints my world in colors I never knew existed.
+            </p>
+            <button id="propose-btn" class="bg-gradient-to-r from-pink-600 to-red-500 hover:from-pink-700 hover:to-red-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="400">
+                Richa, Will You Be My Girlfriend?
+            </button>
+            <div id="proposal-message" class="mt-8 p-6 bg-white bg-opacity-30 rounded-lg text-gray-200" data-aos="zoom-in" data-aos-duration="1000">
+                <p class="text-lg font-medium">
+                    Richa, I promise to cherish you, to make every moment magical, and to love you with every beat of my heart. Say yes, and let’s create a lifetime of memories together!
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer data-aos="fade-up" data-aos-delay="600">
+        @ created by Rahul
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
